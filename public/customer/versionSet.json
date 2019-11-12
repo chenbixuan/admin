@@ -1,0 +1,14 @@
+{
+    "VersionSet": {
+        "BKBLUrl": "//192.168.201.185:7111/BL/ExecuteAction",
+        "WGUID": "loza",
+        "SignalRUrl": "//192.168.201.185:7111",
+        "ResourceURL": "//192.168.201.185:7111",
+        "ResourceCDN": "//sgxcdn.lambor.local/LamborSummary",
+        "WebVersionHost": "//192.168.201.185:8005",
+        "MobileVersionHost": "//192.168.201.186:7111"
+    },
+    "ThemeName": "theme-one-green-real",
+    "ServicePath": "javascript:$zopim.livechat.window.show();",
+    "Environment": "1"
+}

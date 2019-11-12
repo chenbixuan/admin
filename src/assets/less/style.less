@@ -1,0 +1,123 @@
+//登录
+.login-content{
+  width: 100%;
+  .login-cont-fromBox{
+    width: 64%;
+    margin: 0 auto;
+    margin-top: 15%;
+    .fromBox-title{
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .fromBox-item{
+      overflow: hidden;
+      border:1px solid #9E312E;
+      box-sizing: border-box;
+      border-radius: 8px;
+      .fromBox-list{
+        height: 55px;
+        line-height: 55px;
+        clear: both;
+        overflow: hidden;
+        padding: 0px 20px;
+        border-bottom: 1px solid #9E312E;
+        &:last-child{
+          border-bottom: none;
+        }
+        .name{
+          float: left;
+          font-size: 15px;
+          width: 68px;
+          text-align: right;
+          margin-right: 10px;
+        }
+        .putBox{
+          width: 340px;
+          float: left;
+        }
+      }
+    }
+    .van-checkbox{
+      font-size: 13px;
+      color: #A6A5A5;
+      margin: 15px 0px 25px 0px;
+      .van-checkbox__icon{
+        .van-icon{
+          width: 18px;
+          height: 18px;
+          &.van-icon-success{
+            background: #9E312E;
+            border:1px solid #9E312E;
+          }
+        }
+      }
+    }
+  }
+}
+
+//主页
+.home-content{
+  width: 100%;
+  .home-cont-main{
+    width: 100%;
+    .home-cont-title{
+      height: 60px;
+      line-height: 60px;
+      padding: 0px 30px;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 3px solid #9E312E;
+      span{
+        display: block;
+        float: right;
+        border:1px solid #9E312E;
+        border-radius: 8px;
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 12px;
+          font-weight: 300;
+          margin-top: 13px;
+      }
+    }
+    .home-cont-wrapper{
+      width: 100%;
+      height: 100%;
+      .nav-content{
+        width:100%;
+        height: 100%;
+        position: absolute;
+        float: left;
+        width: 140px;
+        border-right: 1px solid #ddd;
+        background: #f8f8f8;
+        .nav-cont-title{
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          font-size: 15px;
+          padding-left: 15px;
+          background: rgba(0, 0, 0, 0.7);
+          font-weight: 300;
+        }
+        .nav-cont-ul{
+          font-size: 13px;
+          .nav-cont-list{
+            height: 38px;
+            line-height: 38px;
+            padding-left: 24px;
+            font-size: 13px;
+            font-weight: 300;
+            &.on,&:hover{
+              background: #9E312E;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
