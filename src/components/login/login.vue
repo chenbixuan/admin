@@ -13,7 +13,7 @@
         </div>
       </div>
       <van-checkbox v-model="checked">自动登录</van-checkbox>
-      <p class="btn">登录</p>
+      <p class="btn" @click="LoginSubmit()">登录</p>
     </div>
   </div>
 </template>
@@ -22,6 +22,11 @@ export default{
   data() {
     return {
       checked: true
+    }
+  },
+  methods: {
+    LoginSubmit:function () {
+      this.$router.push({ name: 'webIndex' });
     }
   }
 }

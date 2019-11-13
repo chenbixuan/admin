@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import {
-  Toast,Checkbox, CheckboxGroup
+  Toast,Checkbox, CheckboxGroup,Icon
 } from 'vant'
 import '@/assets/less/public.less'
 import '@/assets/less/style.less'
@@ -18,6 +18,7 @@ import 'animate.css'
 
 //全局注册icon-svg
 Vue.use(Toast)
+Vue.use(Icon);
 Vue.use(Checkbox).use(CheckboxGroup);
 Vue.use(Vuex);
 Vue.config.productionTip = false
