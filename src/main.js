@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import {
-  Toast,Checkbox, CheckboxGroup,Icon
+  DatetimePicker,Toast,Checkbox,Popup, CheckboxGroup,Icon,Tab, Tabs,Switch,Uploader,Button,Search,Row, Col,Dialog,Field,cellGroup
 } from 'vant'
 import '@/assets/less/public.less'
 import '@/assets/less/style.less'
@@ -20,7 +20,13 @@ import 'animate.css'
 Vue.use(Toast)
 Vue.use(Icon);
 Vue.use(Checkbox).use(CheckboxGroup);
+Vue.use(Tab).use(Tabs);
 Vue.use(Vuex);
+Vue.use(Switch);
+Vue.use(Uploader).use(Button).use(Search);
+Vue.use(Row).use(Col);
+Vue.use(Dialog).use(Field).use(cellGroup);
+Vue.use(DatetimePicker).use(Popup);
 Vue.config.productionTip = false
 
 

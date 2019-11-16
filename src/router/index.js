@@ -21,6 +21,11 @@ export default new Router({
         // 找不到對應目錄時的畫面組件
             path: '*',
             component: NotFoundComponent,
+        },//登录
+        {
+            path: '/login',
+            name: 'webLogin',
+            component: Login
         },{
             path: '/',
             // name: 'webLayout',
@@ -32,12 +37,7 @@ export default new Router({
                 name: 'webIndex',
                 component: Index,
             },
-            //登录
-            {
-                path: '/login',
-                name: 'webLogin',
-                component: Login
-            },
+            
             //配置管理
             {
                 path: '/dispose',

@@ -93,7 +93,7 @@
         height: 100%;
         position: absolute;
         float: left;
-        width: 140px;
+        width: 180px;
         border-right: 1px solid #ddd;
         background: #f8f8f8;
         .nav-cont-title{
@@ -108,8 +108,8 @@
         .nav-cont-ul{
           font-size: 13px;
           .nav-cont-list{
-            height: 38px;
-            line-height: 38px;
+            height: 50px;
+            line-height: 50px;
             font-size: 13px;
             font-weight: 300;
             cursor: pointer;
@@ -132,7 +132,7 @@
       .page-cont-rightHome{
         overflow: hidden;
         flex: 1;
-        margin-left: 140px;
+        margin-left: 180px;
         .rightHome-cont-title{
           font-size: 14px;
           font-weight: 300;
@@ -165,8 +165,10 @@
                 }
               }
               .date-content{
-                width: 213px;
+                width: 150px;
                 height: 36px;
+                line-height: 36px;
+                text-align: center;
                 float: left;
                 border:1px solid #ddd;
                 border-radius: 6px;
@@ -218,6 +220,532 @@
                       background: #EEEEEE;
                     }
                   }
+                }
+              }
+            }
+          }
+          //配置管理
+          .dispose-content{
+            .dispose-cont-tab{
+              // width: 360px;
+              .van-tabs{
+                .van-tabs__wrap{
+                  height: 40px;
+                  line-height: 40px;
+                  .van-tabs__nav--card{
+                    border: 1px solid #9E312E;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 300px;
+                    margin: 0px;
+                    .van-tab{
+                      height: 40px;
+                      line-height: 40px;
+                      color: #9E312E;
+                      &.van-tab--active{
+                        background-color: #9E312E;
+                        color: #fff;
+                      }
+                    }
+                    
+                  }
+                }
+                .van-tabs__content{
+                  margin-top: 30px;
+                  .van-tab__pane{
+                    .card-itemCon{
+                      border:1px solid #ddd;
+                      margin-bottom: 50px;
+                      .card-itemCon-title{
+                        background: #E7E7E7;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 15px;
+                        padding-left:30px;
+                      }
+                      .card-itemCon-ul{
+                        .card-itemCon-list{
+                          border-bottom:1px solid #ddd;
+                          padding: 15px 30px 15px 30px;
+                          font-weight: 300;
+                          font-size: 13px;
+                          color: #272727;
+                          clear: both;
+                          overflow: hidden;
+                          &:last-child{
+                            border-bottom: none;
+                          }
+                          .list-num{
+                            width: 100px;
+                            text-align: right;
+                            float: left;
+                            margin-right: 30px;
+                            line-height: 35px;
+                          }
+                          .list-name{
+                            float: left;
+                            margin-right: 30px;
+                            input{
+                              width: 200px;
+                              height: 36px;
+                              line-height: 36px;
+                              padding: 0px 10px;
+                              border-radius: 4px;
+                              border:1px solid #ddd;
+                            }
+                          }
+                          .list-file{
+                            float: left;
+                            position: relative;
+                            margin-right: 30px;
+                            width: 280px;
+                            height: 36px;
+                            line-height: 36px;
+                            padding: 0px 10px;
+                            border-radius: 4px;
+                            border:1px solid #ddd;
+                            .file{
+                              .van-uploader{
+                                .van-uploader__wrapper{
+                                  .van-uploader__input-wrapper{
+                                    .van-button--primary{
+                                      height: 20px;
+                                      line-height: 20px;
+                                      font-size: 12px;
+                                      width: 159px;
+                                      text-align: left;
+                                      color: #272727;
+                                      background: none;
+                                      border: none;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            // input{
+                            //   width: 280px;
+                            //   height: 36px;
+                            //   line-height: 36px;
+                            //   padding: 0px 10px;
+                            //   border-radius: 4px;
+                            //   border:1px solid #ddd;
+                            // }
+                            .download{
+                              position: absolute;
+                              right:16px;
+                              font-size: 13px;
+                              top:1px;
+                              cursor: pointer;
+                            }
+                            
+                          }
+                          .list-skipLink{
+                            float: left;
+                            margin-right: 30px;
+                            input{
+                              width: 350px;
+                              height: 36px;
+                              line-height: 36px;
+                              padding: 0px 10px;
+                              border-radius: 4px;
+                              border:1px solid #ddd;
+                            }
+                          }
+                          .list-slider{
+                            float: left;
+                            .van-switch{
+                              margin-top: 5px;
+                              &.van-switch--on{
+                                background-color: #9E312E;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              
+            }
+          }
+          //会员管理
+          .member-content{
+            .member-cont-search{
+              margin-bottom:30px;
+              .van-search{
+                width: 350px;
+                .van-search__content{
+                  border:1px solid #ddd;
+                  border-radius: 5px;
+                  background:none;
+                  height: 38px;
+                  line-height: 38px;
+                  color:#272727;
+                }
+              }
+            }
+            .member-cont-main{
+              border:1px solid #ddd;
+              margin-bottom: 50px;
+              .member-cont-header{
+                background: #E7E7E7;
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+                .header-list{
+                  float: left;
+                  width: 11%;
+                  text-align: center;
+                  &.header-list-lioOne{
+                    padding: 0px 20px;
+                  }
+                  &.header-list-lioLast{
+                    width: 9%;
+                  }
+                }
+              }
+              .member-cont-body{
+                .body-list{
+                  border-bottom: 1px solid #ddd;
+                  clear: both;
+                  &:last-child{
+                    border-bottom: none;
+                  }
+                  .body-list-ul{
+                    overflow: hidden;
+                    .body-list-li{
+                      float: left;
+                      width: 11%;
+                      height: 72px;
+                      line-height: 63px;
+                      text-align: center;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color:#272727;
+                      padding: 16px 0px;
+                      &.body-list-lioOne{
+                        padding: 16px 20px;
+                      }
+                      &.body-list-lioLast{
+                        width: 8%;
+                        .search-btn{
+                          width: 30px;
+                          height: 30px;
+                          border-radius: 4px;
+                          background: #9E312E;
+                          text-align: center;
+                          margin-left: 55px;
+                          margin-top:22px;
+                          .van-icon-search{
+                            color: #fff;
+                            vertical-align: top;
+                            margin-top:7px;
+                          }
+                        }
+                      }
+                      .portrait{
+                        float: left;
+                        width: 38px;
+                        height: auto;
+                      }
+                      .text{
+                        width: 110px;
+                        float: left;
+                        margin-left: 15px;
+                        line-height: 22px;
+                      }
+                    }
+                  }
+                }
+                
+              }
+            }
+            //会员详情
+            .member-detail{
+              overflow: hidden;
+              .member-detail-item{
+                border:1px solid #ddd;
+                margin-bottom: 50px;
+                .member-detail-title{
+                  background: #E7E7E7;
+                  height: 45px;
+                  line-height: 45px;
+                  font-size: 15px;
+                  padding-left: 30px;
+                }
+                .member-detail-info{
+                  overflow: hidden;
+                  .member-detail-common{
+                    &.member-detail-text{
+                      clear: both;
+                      width: 100%;
+                      border-right: none;
+                    }
+                    &.member-detail-ul{
+                      float: left;
+                      width: 89%;
+                      border-right: 1px solid #ddd;
+                    }
+                    .info-list{
+                      border-bottom: 1px solid #ddd;
+                      clear: both;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color:#272727;
+                      padding: 16px 0px;
+                      clear: both;
+                      overflow: hidden;
+                      padding-left: 30px;
+                      .info-list-fl{
+                        float: left;
+                        width: 50%;
+                      }
+                      .info-list-fg{
+                        float: left;
+                        width: 50%;
+                      }
+                      .info-list-li{
+                        float: left;
+                        width: 25%;
+                      }
+                    }
+                  }
+                  .member-detail-sculpture{
+                    float: right;
+                    width: 10%;
+                    height: auto;
+                    text-align: center;
+                    img{
+                      width: 100%;
+                      height: 100%;
+                      align-items: center;
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          //卡券管理
+          .card-content{
+            overflow: hidden;
+            .card-cont-add{
+              width: 160px;
+              height: 36px;
+              line-height: 36px;
+              border-radius: 5px;
+              border:1px solid #ddd;
+              text-align: center;
+              color: #A6A5A5;
+              font-weight: 300;
+              font-size: 14px;
+              cursor: pointer;
+            }
+            .card-cont-main{
+              border:1px solid #ddd;
+              margin-top: 30px;
+              .card-cont-header{
+                background: #E7E7E7;
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+                .header-list{
+                  float: left;
+                  width: 12.5%;
+                  text-align: center;
+                }
+              }
+              .card-cont-body{
+                .body-list{
+                  border-bottom: 1px solid #ddd;
+                  clear: both;
+                  &:last-child{
+                    border-bottom: none;
+                  }
+                  .body-list-ul{
+                    overflow: hidden;
+                    .body-list-li{
+                      float: left;
+                      width: 12.5%;
+                      height: 60px;
+                      line-height: 60px;
+                      text-align: center;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color:#272727;
+                      &.body-list-lioLast{
+                        span{
+                          color: #9E312E;
+                          margin-right: 12px;
+                          cursor: pointer;
+                          &:last-child{
+                            margin-right: 0px;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                  }
+                }
+                
+              }
+            }
+          }
+          //客照管理
+          .works-content{
+            overflow: hidden;
+            .works-cont-add{
+              width: 160px;
+              height: 36px;
+              line-height: 36px;
+              border-radius: 5px;
+              border:1px solid #9E312E;
+              text-align: center;
+              color: #9E312E;
+              font-weight: 300;
+              font-size: 14px;
+              cursor: pointer;
+            }
+            .works-cont-main{
+              border:1px solid #ddd;
+              margin-top: 30px;
+              .works-cont-header{
+                background: #E7E7E7;
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+                .header-list{
+                  float: left;
+                  width: 70%;
+                  text-align: center;
+                  &.header-list-lioOne{
+                    width: 15%;
+                  }
+                  &.header-list-lioLast{
+                    width: 15%;
+                  }
+                }
+              }
+              .works-cont-body{
+                .body-list{
+                  padding: 20px 0px;
+                  border-bottom: 1px solid #ddd;
+                  clear: both;
+                  &:last-child{
+                    border-bottom: none;
+                  }
+                  .body-list-ul{
+                    overflow: hidden;
+                    .body-list-li{
+                      float: left;
+                      width: 70%;
+                      line-height: 100px;
+                      text-align: center;
+                      font-size: 14px;
+                      font-weight: 300;
+                      color:#272727;
+                      &.body-list-lioOne{
+                        width: 15%;
+                      }
+                      .li-text{
+                        line-height: 25px;
+                        text-align: left;
+                      }
+                      .li-img{
+                        overflow: hidden;
+                        margin-top: 16px;
+                        .li-img-list{
+                          float: left;
+                          width: 60px;
+                          height: 60px;
+                          margin-right: 25px;
+                          &:last-child{
+                            margin-right: 0px;
+                          }
+                          img{
+                            width: 100%;
+                            height: auto;
+                          }
+                        }
+                      }
+                      &.body-list-lioLast{
+                        width: 15%;
+                        span{
+                          color: #9E312E;
+                          margin-right: 12px;
+                          cursor: pointer;
+                          i{
+                            
+                            font-style:normal;
+                            &.i2{
+                              color: green;
+                            }
+                          }
+                          &:last-child{
+                            margin-right: 0px;
+                          }
+                        }
+                        
+                      }
+                      
+                    }
+                  }
+                }
+                
+              }
+            }
+            //弹窗
+            .works-dialog-content{
+              color: #272727;
+              border-radius: 4px;
+              min-width: 800px;
+              .works-dialog-title{
+                height: 45px;
+                line-height: 45px;
+                font-size: 15px;
+                padding-left: 30px;
+                background: #E7E7E7;
+                border-bottom: 1px solid #ddd;
+              }
+              .works-dialog-main{
+                padding: 30px;
+                .works-dialog-putBox{
+                  .van-cell-group{
+                    .van-field{
+                      border:1px solid #ddd;
+                      border-radius: 5px;
+                      // min-height: 160px;
+                      .van-cell__title{
+                        display: none;
+                      }
+                      .van-cell__value{
+                        .van-field__body{
+                          min-height:130px;
+                          .van-field__control{
+                            min-height:130px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .works-dialog-file{
+                  margin-top: 30px;
+                  .van-uploader{
+                    .van-uploader__wrapper{
+                      .van-uploader__preview{
+                        margin-right: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+              .van-dialog__footer{
+                .van-dialog__confirm{
+                  background:#9E312E;
+                  color: #fff;
                 }
               }
             }
